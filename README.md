@@ -1,2 +1,3 @@
-# introduccion-gui
-Repositorio de prácticas Infotec, javascript + css
+## :hammer: introduccion-gui (HTML + CSS)
+Aquí subiré mis ejercicios y avances practicos de HTML + CSS
+

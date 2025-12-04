@@ -1,0 +1,24 @@
+.cabecera{
+    background-color:chocolate;
+    float: left;
+    height: 130px;
+    width: 100%;
+}
+
+.foto{
+    background-color: aliceblue;
+    float: left;
+    height: 400px;
+    width: 40%;
+}
+
+.bio{
+    background-color: rgb(132, 198, 255);
+    float: left;
+    height: 400px;
+    width: 60%;
+}
+
+body{
+    background-color:rgb(212, 206, 202);
+}

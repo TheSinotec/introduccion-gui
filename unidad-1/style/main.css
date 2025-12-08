@@ -1,3 +1,4 @@
+/* Selector de clase */
 .cabecera{
     background-color:rgba(0, 25, 137, 0.614);
     float: left;
@@ -51,6 +52,7 @@
     align-content: center;
 }
 
+/* Selector de ID */
 #foto{
     width: 65%;
     border-radius: 20%;
@@ -74,6 +76,7 @@
     margin: 0 auto;
 }
 
+/* Selector de etiqueta */
 li{
     padding: 0.5em;
     display: inline;

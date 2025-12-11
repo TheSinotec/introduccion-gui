@@ -1,0 +1,19 @@
+body{
+    background-color: black;
+}
+
+.container{
+    margin: auto;
+    border: solid;
+    border-color: aliceblue;
+    height: 90vh;
+    width: 90vh;
+    color: aliceblue;
+    flex: 100px;
+}
+
+@media screen and (max-width: 530px) {
+    .container{
+        width: 100%;
+    }
+}

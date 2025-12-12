@@ -2,14 +2,52 @@ body{
     background-color: black;
 }
 
-.container{
-    margin: auto;
+nav{
     border: solid;
     border-color: aliceblue;
-    height: 90vh;
-    width: 90vh;
+    height: 10vh;
+    width: 100%;
+}
+
+.container{
+    border: solid;
+    border-color: aliceblue;
+    width: 100%;
     color: aliceblue;
     flex: 100px;
+}
+
+.cards-container{
+    border: solid;
+    border-color: aliceblue;
+    height: 30vh;
+    width: 100%;
+    color: aliceblue;
+}
+
+.card{
+    margin: 1% 2%;
+    border: solid;
+    border-color: aliceblue;
+    height: 80%;
+    width: 20%;
+    color: aliceblue;
+    flex: 100px;
+    float: left;
+}
+
+.project{
+    border: solid;
+    border-color: rgb(0, 255, 132);
+    width: 100%;
+    color: aliceblue;
+}
+
+footer{
+    border: solid;
+    border-color: aliceblue;
+    height: 10vh;
+    width: 100%;
 }
 
 @media screen and (max-width: 530px) {

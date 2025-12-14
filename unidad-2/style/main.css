@@ -1,46 +1,138 @@
 body{
     background-color: black;
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+  flex: 1;
+}
+
+header{
+    padding: 1% 5%;
+    border: solid;
+    border-color: aliceblue;
+    background-color: aqua;
+    height: 10vh;
+    width: 90%; /*NO SE AJUSTA AL 100%*/
+}
+
+header h1{
+    color: rgb(66, 0, 0);
+    letter-spacing: 0.5rem;
 }
 
 nav{
     border: solid;
     border-color: aliceblue;
-    height: 10vh;
+    display: flex;
+    flex-direction: row;
+    height: 5vh;
     width: 100%;
+}
+
+nav a{
+    margin: auto;
+    color: aliceblue;
+    padding: 1% 2%;
+    text-decoration: none;
 }
 
 .container{
     border: solid;
     border-color: aliceblue;
-    width: 100%;
     color: aliceblue;
+    display: flex;
     flex: 100px;
+    flex-wrap: wrap;
+    width: 100%;
 }
 
 .cards-container{
+    padding: 2% 1% 5% 1%;
     border: solid;
     border-color: aliceblue;
-    height: 30vh;
-    width: 100%;
     color: aliceblue;
+    align-content: center;
+    display: flex;
 }
 
 .card{
-    margin: 1% 2%;
+    padding-bottom: 2%;
+    margin: auto;
     border: solid;
     border-color: aliceblue;
-    height: 80%;
-    width: 20%;
+    height: 100%;
+    width: 30%;
     color: aliceblue;
-    flex: 100px;
-    float: left;
+    align-content: center;
+    text-align: center;
+}
+
+.card p{
+    padding: 0% 2%;
+}
+
+.card img{
+    height: 20vh;
+    border-radius: 20%;
+}
+
+.card a{
+    text-decoration: none;
+    color: aqua;
+}
+
+.lista-tech{
+    margin: 3% 1%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.lista-tech h4{
+    padding: 0 0.7rem;
+    margin: 0;
+}
+
+.project-container{
+    width: 100%;
+}
+
+.project-container h1{
+    text-align: center;
 }
 
 .project{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+}
+
+.texto{
     border: solid;
-    border-color: rgb(0, 255, 132);
-    width: 100%;
-    color: aliceblue;
+    border-color: aliceblue;
+    width: 50%;
+    padding: 1%;
+    margin-left: 2%;
+    background-color: aqua;
+    color:  rgb(66, 0, 0);
+}
+
+.captura{
+    padding: 1%;
+    flex: 50%;
+}
+
+.captura  img{
+    height: 35vh;
+    border: solid;
+    border-color: black;
+    border-radius: 10%;
 }
 
 footer{
@@ -50,8 +142,58 @@ footer{
     width: 100%;
 }
 
-@media screen and (max-width: 530px) {
-    .container{
-        width: 100%;
+footer a{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-decoration: none;
+}
+
+#logo-redes{
+    height: 6vh;
+    margin: 0% 1%;
+    border-radius: 50%;
+    padding: 1%;
+}
+
+#logo-txt{
+    padding-left: 1%;
+    color: aliceblue;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 800px) {
+    .cards-container{
+        padding: 3% 0%;
+        flex-direction: column;
+    }
+
+    .card{
+        margin-top: 1%;
+        margin-bottom: 1%;
+        width: 95%;
+    }
+    
+    .card img{
+        height: 30vh;
+    }
+    
+    .project{
+    flex-direction: column;
+    }
+    
+    .texto{
+        width: 90%;
+        margin-left: 0%;
+        margin-bottom: 1%;
     }
 }
+
+@media screen and (max-width: 650px) {
+
+    header a{
+        color: #00000000;
+    }
+}
+
+

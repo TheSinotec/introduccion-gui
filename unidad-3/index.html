@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!--Region de consiguracion inicial-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Titulo de la pagina-->
+    <title>Formulario de Contacto</title>
+    <link rel="stylesheet" href="style/styles.css">
+</head>
+<!--Cuerpo de la pagina-->
+<body>
+    <!--Contenedor principal-->
+    <div class="container">
+        <!--Titulo central del contenido-->
+        <h1>FORMULARIO</h1>
+        <!--Formulario de datos-->
+        <form>
+            <!--Leyenda de seccion personal-->
+            <legend for="id-personal">Información personal:</legend>
+            <!--Campo de datos-->
+            <fieldset id="id-personal">
+                <p>
+                    <!--Entrada de nombre-->
+                    <label for="id-nombre"><b>Nombre completo:</b></label>
+                    <input id="id-nombre" name="nombre" type="text" placeholder="Ingresa tu nombre completo" required>
+                </p>
+                <p>
+                    <!--Entrada de correo-->
+                    <label for="id-email"><b>Correo elecrónico:</b></label>
+                    <input id="id-email" name="email" type="email" placeholder="Ingresa tu correo elecrónico" required>
+                </p>
+                <p>
+                    <!--Entrada de telefono-->
+                    <label for="id-telefono"><b>Número telefónico:</b></label>
+                    <input id="id-telefono" name="telefono" type="tel" minlength="8" pattern="[0-9]{10}" placeholder="Ingresa tu número de teléfono" required>
+                </p>
+            </fieldset>
+            <!--Leyenda de seccion de contenido-->
+            <legend for="id-contenido">Contenido:</legend>
+            <!--Campo de datos-->
+            <fieldset id="id-contenido">
+                <p>
+                    <!--Entrada de seleccion de asunto-->
+                    <label for="id-asunto"><b>Asunto:</b></label>
+                    <!--Contenedor de selector-->
+                    <div class="select-other">
+                        <!--Selector-->
+                        <select id="id-asunto" name="asunto" required>
+                            <option selected value="" disabled>Selecciona un asunto</option>
+                            <option value="Oferta laboral">Oferta laboral</option>
+                            <option value="Colaboración">Colaboración</option>
+                            <option value="Consulta técnica">Consulta técnica</option>
+                            <option value="Otro">Otro (especificar)</option>
+                        </select>
+                        <!--Campo -Otros--->
+                        <input id="id-otro" name="otro" type="text" placeholder="Especificar otro">
+                    </div>
+                </p>
+                <p>
+                    <!--Entrada de mensaje-->
+                    <label for="id-mensaje"><b>Mensaje:</b></label>
+                    <textarea id="id-mensaje" name="mensaje" placeholder="Describe tu mensaje en detalle..." required></textarea>
+                </p>
+            </fieldset>
+            <!--Leyenda de seccion de terminos y condiciones-->
+            <legend for="id-send">Términos y condiciones:</legend>
+            <!--Campo de datos-->
+            <fieldset id="id-send">
+                <!--Entrada de terminos y condiciones-->
+                <label for="id-terminos"><b>Acepto la política de privacidad y términos de uso: </b></label>
+                <input id="id-terminos" name="terminos" type="checkbox" required>
+            </fieldset>
+            <!--Leyenda de seccion de botones-->
+            <legend for="id-botonera"></legend>
+            <!--Campo de datos-->
+            <fieldset id="id-botonera" class="botonera">
+                <!--Boton de envio-->
+                <input type="submit" value="Enviar Mensaje">
+                <!--Boton de reseteo-->
+                <input type="reset" value="Limpiar Formulario">
+            </fieldset>
+        </form>
+    </div>
+</body>
+</html>

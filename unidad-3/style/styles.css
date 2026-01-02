@@ -1,0 +1,141 @@
+body{
+    background-color: chartreuse;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+fieldset{
+    margin: 3% 2%;
+    border-radius: 5%;
+}
+
+fieldset:hover{
+    background-color:rgba(255, 255, 0, 0.455);
+}
+
+fieldset::first-letter, label::first-letter, p::first-letter{
+    color:rgb(255, 0, 0);
+}
+
+h1{
+    padding: 1%;
+    display: flex;
+    justify-content: center;
+}
+
+h1:hover{
+    color:rgb(255, 0, 0);
+}
+
+#id-personal p{
+    margin: 3%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#id-personal input{
+    margin: 3%;
+    padding: 2%;
+}
+
+textarea{
+    margin: 3% 0%;
+    width: 100%;
+    resize: vertical;
+    border-radius: 5%;
+    min-height: 5rem;
+}
+
+input{
+    border-radius: 5%;
+    border-color: rgb(209, 209, 209);
+}
+
+input:checked{
+    accent-color: chartreuse;
+}
+
+input::placeholder, textarea::placeholder{
+    background-color: rgba(135, 239, 171, 0.218);
+}
+
+input:hover, select:hover, textarea:hover{
+    background-color: rgba(191, 255, 0, 0.758);
+}
+
+input:focus, select:focus, textarea:focus{
+    background-color: aqua;
+}
+
+select{
+    border-radius: 5%;
+    margin: 0% 3%;
+    background-color: rgb(214, 248, 226);
+}
+
+option:disabled{
+    background-color: rgba(57, 135, 84, 0.218);
+}
+
+select, #id-otro{
+    padding: 2%;
+    width: 43%;
+}
+
+#id-otro{
+    margin: 1% 1%;
+}
+
+.select-other{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.container{
+    background-color: white;
+    border-radius: 100%;
+    margin: 2% 25%;
+    padding: 10%;
+}
+
+.botonera{
+    margin: 8% 2%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.botonera input{
+    padding: 3%;
+    margin: 3%;
+    background-color: chartreuse;
+    font-weight: bold;
+}
+
+.botonera input:hover{
+    background-color: rgb(255, 213, 0);
+    font-weight: bold;
+}
+
+@media screen and (max-width: 1100px) {
+    .container{
+        margin: 2% 10%;
+        padding: 18% 15%;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .container{
+        padding: 30% 15%;
+    }
+    
+    select, #id-otro{
+        width: 100%;
+    }
+    .botonera input{
+        width: 100%;
+        padding: 5%;
+    }
+}

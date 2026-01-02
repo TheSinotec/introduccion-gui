@@ -1,0 +1,44 @@
+.form-container{
+    margin: 1.5% 2% auto;
+    border: solid;
+    border-color: rgb(255, 127, 240);
+    width: 84vw;
+    border-radius: 1% 20%;
+    background-color: rgb(255, 127, 240);
+    padding: 1%;
+    flex-direction: column;
+}
+
+.form-container form{
+    text-align: center;
+}
+
+.form-section{
+    padding: 0% 4%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.form-container label{
+    margin: 0.5% 0%;
+}
+
+.botoneras{
+    margin:1% 3%;
+}
+
+.botoneras button{
+    margin: 1%;
+    padding: 5% 6%;
+}
+
+textarea{
+    width: 79vw;
+}
+
+@media screen and (max-width: 800px){
+    .form-section select{
+        width: 100%;
+    }
+}

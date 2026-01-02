@@ -1,0 +1,84 @@
+.evento-container{
+    margin: 1% 2% auto;
+    border: solid;
+    border-color: rgb(255, 127, 240);
+    width: 82vw;
+    border-radius: 1% 20%;
+    background-color: rgb(255, 127, 240);
+    padding: 1% 2% 2% 2%;
+}
+
+#evento-asis{
+    background-color: rgba(219, 116, 251, 1);
+}
+
+#evento-pon{
+    background-color: rgba(102, 211, 254, 1);
+}
+
+.evento-section{
+    padding: 3% 5%;
+    display: flex;
+    overflow-x: auto;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+.evento-section select{
+    margin: 2%;
+    width: 100%;
+}
+
+.evento-section p{
+    margin: auto;
+    text-align: center;
+    margin: 1%;
+}
+
+.evento-section p a, .evento-section p b{
+    padding: 1%;
+    margin: 1%;
+}
+
+.estadistica{
+    padding: 3% 4%;
+    display: flex;
+    justify-content: left;
+}
+
+#estadistica p{
+    margin: none;
+}
+
+#estadistica a label{
+    margin: 3%;
+}
+
+input:disabled {
+  opacity: 1; 
+  all: revert;
+}
+
+th{
+    background-color: rgb(178, 187, 182);
+    padding: 8px;
+    border-radius: 5%;
+}
+
+td{
+    text-align: center;
+    padding: 8px;
+    background-color: aliceblue;
+    border-radius: 5%;
+}
+
+tr:hover td{
+    background-color: bisque;
+}
+
+@media screen and (max-width: 540px){
+    #tabla-asis, #tabla-pon{
+        margin-left: 12%;
+    }
+}

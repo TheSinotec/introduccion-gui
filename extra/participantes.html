@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Participantes del Evento</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/eventos.css">
+</head>
+<body>
+    <header>
+        <h1>
+            Participantes
+        </h1>
+    </header>
+    <nav id="nav-container"></nav>
+    <div class="container">
+        <div id="id-evento" class="evento-container">
+            <b>Opciones</b>
+            <div class="evento-section">
+                <p>
+                    <label for="id-evento-slc"><b>Evento:</b></label>
+                    <select id="id-evento-slc" name="evento" onchange="loadData(this.value.substring(3, this.value.length))">
+                        <option disabled selected value="">Seleccione una opción...</option>
+                        <option value="ev-1">Complejidad Algorítmica para la Ciencia de Datos.</option>
+                        <option value="ev-2">Riesgos y alcances del uso de la Inteligencia Artificial en la programación.</option>
+                        <option value="ev-3">Introducción a la arquitectura de software.</option>
+                        <option value="ev-4">Métodos de clasificación de datos.</option>
+                    </select>
+                </p>
+                <p>
+                    <b>Asistentes:</b>
+                    <br>
+                    <a id="ev-part">00</a>
+                    <br><br>
+                    <b>Ponentes:</b>
+                    <br>
+                    <a id="ev-pon">00</a>
+                </p>
+            </div>
+        </div>
+        <div class="evento-container" id="evento-asis">
+            <b>Asistentes</b>
+            <div class="evento-section">
+                <table id="tabla-asis">
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Email</th>
+                        <th>Empresa</th>
+                        <th>Nivel de experiencia</th>
+                        <th>Fecha de registro</th>
+                    </tr>
+                    <tr>
+                        <td colspan="5">Sin registros...</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="evento-container" id="evento-pon">
+            <b>Ponentes</b>
+            <div class="evento-section">
+                <table id="tabla-pon">
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Ponencia</th>
+                        <th>Duración</th>
+                        <th>Empresa</th>
+                        <th>Biografía</th>
+                    </tr>
+                    <tr>
+                        <td colspan="5">Sin registros...</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="evento-container">
+            <b>Estadisticas</b>
+            <div class="estadistica">
+                <p>
+                    <label><b>Distribución por nivel de experiencia:</b></label>
+                    <br><br>
+                    <a>
+                        <label id="lbl-xp-p" for="id-xp-p" title="70%">Principiante</label>
+                        <br>
+                        <input id="id-xp-p" name="xp-p" type="range" min="0" max="100" step="0.01" value="70" title="70%" disabled>
+                        <br><br>
+                        <label id="lbl-xp-i" for="id-xp-i" title="0%">Intermedio</label>
+                        <br>
+                        <input id="id-xp-i" name="xp-i" type="range" min="0" max="100" step="0.01" value="0" title="0%" disabled>
+                        <br><br>
+                        <label id="lbl-xp-a" for="id-xp-a" title="50%">Avanzado</label>
+                        <br>
+                        <input id="id-xp-a" name="xp-a" type="range" min="0" max="100" step="0.01" value="50" title="50%" disabled>
+                    </a>
+                    <br><br>
+                    <label for="id-dist-ubicacion"><b>Distribución por país/ciudad:</b></label>
+                    <br><br>
+                    <a id="id-dist-ubicacion"></a>
+                    <br><br>
+                    <label><b>Ratio de asistentes/ponentes:</b></label>
+                    <br><br>
+                    <a>
+                        <label id="lbl-ratio-asis" for="id-ratio-asis" title="70%">Asistentes</label>
+                        <br>
+                        <input id="id-ratio-asis" name="ratio-asis" type="range" min="0" max="100" step="0.01" value="70" title="70%" disabled>
+                        <br><br>
+                        <label id="lbl-ratio-pon" for="id-ratio-pon" title="0%">Ponentes</label>
+                        <br>
+                        <input id="id-ratio-pon" name="ratio-pon" type="range" min="0" max="100" step="0.01" value="0" title="0%" disabled>
+                    </a>
+                    <br><br>
+                    <label for="id-registros"><b>Registros por día:</b></label>
+                    <a id="id-registros">10</a>
+                </p>
+            </div>
+        </div>
+    </div>
+    <footer id="footer-container"></footer>
+    <script src="js/navbar.js"></script>
+    <script src="js/footer.js"></script>
+    <script src="js/participantes.js"></script>
+    <script src="js/charge.js"></script>
+</body>
+</html>

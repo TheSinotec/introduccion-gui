@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Participantes</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/registro.css">
+</head>
+<body>
+    <header>
+        <h1>
+            Registro
+        </h1>
+    </header>
+    <nav id="nav-container"></nav>
+    <div class="container">
+        <form id="formA" action="#" method="POST">
+            <div id="id-evento" class="form-container">
+                <b>Opciones</b>
+                <div class="form-section">
+                    <p>
+                        <a>
+                            <label for="id-evento-slc"><b>Evento:</b></label>
+                            <select id="id-evento-slc" name="evento" required>
+                                <option disabled selected name="evento" value="">Seleccione una opción...</option>
+                                <option value="ev-1" name="evento">Complejidad Algorítmica para la Ciencia de Datos.</option>
+                                <option value="ev-2" name="evento">Riesgos y alcances del uso de la Inteligencia Artificial en la programación.</option>
+                                <option value="ev-3" name="evento">Introducción a la arquitectura de software.</option>
+                                <option value="ev-4" name="evento">Métodos de clasificación de datos.</option>
+                            </select>
+                        </a>
+                        <br><br>
+                        <label><b>Tipo de participante:</b></label>
+                        <br>
+                        <label for="tipo-asis">Asistente</label>
+                        <input id="tipo-asis" name="tipo" type="radio" value="Asistente" onchange="loadForms()">
+                        <label for="tipo-pon">Ponente</label>
+                        <input id="tipo-pon" name="tipo" type="radio" value="Ponente" onchange="loadForms()">
+                    </p>
+                </div>
+            </div>
+            <div id="id-general" class="form-container" hidden></div>
+            <div id="id-asistentes" class="form-container" hidden></div>
+            <div id="id-ponentes" class="form-container" hidden></div>
+            <div class="botoneras">
+                <button id="btn-register" form="formA" type="submit" disabled>Registrar</button>
+                <button type="reset" onclick="resetForm()">Cancelar</button>
+                <button type="button" onclick="verPart()">Ver participantes registrados</button>
+            </div>
+        </form>
+    </div>
+    <footer id="footer-container"></footer>
+    <script src="js/navbar.js"></script>
+    <script src="js/footer.js"></script>
+    <script src="js/registro.js"></script>
+    <script src="js/charge.js"></script>
+</body>
+</html>

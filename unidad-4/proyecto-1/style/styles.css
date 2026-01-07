@@ -1,1 +1,7 @@
+@import "colors.css";
+/*
+    color: var(--color-primary);
+*/
 
+/* TODOS LOS IMPORTS */
+@import "grid.css";

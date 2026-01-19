@@ -1,0 +1,161 @@
+.card-container{
+    background-color: var(--base-light);
+    padding: 15px;
+}
+
+.end-card{
+    padding: 5px;
+}
+
+.card {
+    background-color: white;
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    overflow: hidden;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding-bottom: 0;
+}
+
+.detail-header {
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 10px;
+    margin-bottom: 5px;
+    font-size: 1rem;
+    color: var(--text-title);
+    font-weight: 600;
+}
+
+.tech-grid {
+    gap: 15px;
+}
+
+
+.tech-text {
+    padding-top: 10px;
+    font-size: 0.85rem;
+    color: var(--text-body);
+    text-align: justify;
+}
+
+.tech-diagram {
+    aspect-ratio: 1; /* Cuadrada */
+    background-color: #f1f5f9;
+    border-radius: 8px;
+    border: 1px dashed var(--border-color);
+    background-size: cover;
+    transition: all 0.3s;
+}
+
+#project-1{
+    background-image: url("../media/demo_1.jpeg");
+}
+
+#project-2{
+    background-image: url("../media/demo_2.jpeg");
+}
+
+#project-3{
+    background-image: url("../media/demo_3.webp");
+}
+
+.tech-diagram:hover{
+    transform: scale(1.1);
+}
+
+
+.specs-list {
+    list-style: none;
+    margin-top: 10px;
+    font-size: 0.8rem;
+    color: var(--text-title);
+}
+.specs-list li {
+    display: flex;
+    padding: 4px 0;
+    border-bottom: 1px solid #f1f5f9;
+}
+
+.specs-list span { 
+    font-weight: bold; color: var(--primary-blue); 
+    text-align: center;
+}
+
+.detail-container{
+    margin-top: 10px;
+}
+
+.detail-card {
+    padding: 2rem;
+}
+
+.detail-header {
+    margin-bottom: 1.5rem;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid var(--border-color);
+}
+
+.detail-section {
+    gap: 2rem;
+}
+
+.detail-text p {
+    margin-bottom: 1.5rem;
+}
+
+.detail-visual-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.secondary-image {
+    aspect-ratio: 1;
+    background-color: var(--light-blue-bg);
+    border-radius: 12px;
+    border: 1px solid var(--border-color);
+    background-size: cover;
+    background-position: center;
+}
+
+#imagen-1{
+    background-image: url('../media/curriculum.jpeg');
+}
+
+#imagen-2{
+    background-image: url('../media/inventario.jpeg');
+}
+
+#imagen-3{
+    background-image: url('../media/shamir.png');
+}
+
+@media only screen and (min-width: 992px){
+    .tech-text {
+        padding-left: 10px;
+    }
+    .specs-list {
+        padding-left: 10px;
+    }
+    .tech-diagram {
+        margin-top: 20px;
+    }
+    .secondary-image{
+        height: 400px;
+        width: 700px;
+        margin: auto;
+    }
+}
+
+@media only screen and (min-width: 1200px){
+    .tech-diagram {
+        margin-top: 0px;
+    }
+    .secondary-image{
+        height: 500px;
+        width: 900px;
+        margin: auto;
+    }
+}

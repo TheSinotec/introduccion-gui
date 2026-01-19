@@ -1,5 +1,9 @@
 :root{
-    /*
-    --color-primary: blue; 
-    */
+    --base-light: #00ABE4;
+    --primary-blue: #2196f3; 
+    --light-blue-bg: #e3f2fd;      
+    --input-bg: #f5f9fc;           
+    --border-color: #bbdefb;       
+    --text-color: #455a64;
+    --text-title: #1e3a8a;
 }

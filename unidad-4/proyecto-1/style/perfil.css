@@ -1,0 +1,108 @@
+.perfil-data{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.photo{
+    text-align: center;
+}
+
+.photo img {
+    height: 252px;
+    margin: 0px 10px;
+    border-radius: 70px;
+    border: solid;
+    border-color: var(--base-light);
+    transition: all 0.3s;
+}
+
+.photo:hover img{
+    transform: scale(1.05);
+}
+
+.list-text{
+    padding: 8px 18.2px;
+}
+
+.list-text ul{
+    padding: 9px;
+    list-style: none;
+    background-color: #E9F1FA;
+}
+
+.list-text ul li{
+    padding: 4px;
+}
+
+.bio-body{
+    background-color: var(--base-light);
+    padding: 10px 20px;
+}
+
+.bio-body h1{
+    color: white;
+    padding: 15px 0px;
+}
+
+.bio-body p{
+    padding: 10px;
+    text-align: justify;
+}
+
+.bio-text{
+    padding: 5px 10px;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.firma p{
+    padding: 10px 0px;
+    color: white;
+}
+
+
+@media only screen and (max-width: 768px){
+    .list-text{
+        text-align: center;
+    }
+}
+
+@media only screen and (min-width: 768px){
+    .photo img {
+        height: 295px;
+    }
+        
+    .list-text{
+        padding: 31px 50px 0px 0px;
+    }
+
+    .list-text ul{
+        padding: 22px;
+    }
+
+    .list-text ul li{
+        padding: 4px;
+    }
+}
+
+@media only screen and (min-width: 1200px){
+     
+    .list-text ul{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .list-text{
+        padding: 10px 20px;
+        margin-bottom: 30px;
+    }
+
+    .bio-body{
+        padding: 60px 20px;
+    }
+
+    .photo img {
+        margin: 30px 0px;
+    }
+}

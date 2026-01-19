@@ -1,58 +1,194 @@
 *{
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 html, body{
-    margin: 0;
-    padding: 0;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-.main-links {
-  display: flex;
-  gap: 1rem;
-  list-style: none;
-}
-
-.main-links li {
-  padding: 0.5rem 1rem;
-  background-color: rgb(10, 207, 197);
-}
-
-.dropdown-li {
+.site-header {
+  background-color: #13406c;
+  color: white;
+  padding: 2rem;
+  align-items: center;
   position: relative;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
-.dropdown-li:focus{
-    width: 100%;
-    background-color: white;
-    color: white;
-}
-
-.dropdown-li:focus .dropdown {
+/* --- LOGO --- */
+.logo img {
+  height: 50px;
   display: block;
-  opacity: 1;
+  background-color: white;
+  padding: 8px;
+  border-radius: 5px;
 }
 
-.dropdown-li:focus p {
-  opacity: 1;
-  visibility: hidden;
-  margin: 0;
-  padding: 0;
-  width: 0;
-  height: 0;
-}
-
-.dropdown {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  left: 0;
-  top: 100%;
-  opacity: 0;
+/* --- CHECKBOX HACK (La Magia) --- */
+#nav-toggle {
   display: none;
 }
 
-.dropdown li {
+/* --- BOTÓN HAMBURGUESA --- */
+.nav-toggle-label {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 25px;
+  height: 21px;
+}
+
+.space-nav{
+  height: 15px;
+}
+
+/* Las 3 barritas del menú */
+.nav-toggle-label span {
+  display: block;
+  height: 3px;
+  width: 100%;
+  border-radius: 2px;
+  background-color: white;
+  transition: all 0.3s ease-in-out;
+}
+
+/* --- BARRA DE NAVEGACIÓN (MENÚ) --- */
+.navbar {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease-out;
+}
+
+.navbar ul {
   list-style: none;
+  padding-top: 1rem;
+  text-align: center;
+}
+
+.navbar li {
+  border-top: 1px solid #043465;
+}
+
+.navbar a {
+  display: block;
+  padding: 1rem;
+  color: white;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+.navbar a:hover {
+  background-color: #083562;
+}
+
+/* --- LÓGICA DE APERTURA (CSS PURE) --- */
+#nav-toggle:checked ~ .navbar {
+  max-height: 300px;
+}
+
+.redes{
+  padding: 20px 10px;
+  padding-bottom: 0;
+}
+
+.red{
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  color: inherit;
+}
+
+.red img{
+  height: 60px;
+  transition: all 0.3s;
+}
+
+.red:hover img, .red:hover p{
+  transform: scale(1.1);
+}
+
+.red p{
+  font-weight: bold;
+  transition: all 0.3s;
+}
+
+.sign{
+    text-align: center;
+    padding: 15px;
+}
+
+@media only screen and (min-width: 768px){
+  .navbar ul{
+    display: flex;
+  }
+
+  .navbar ul li{
+    margin: auto;
+    width: 100%;
+  }
+
+  #guion{
+    opacity: 0;
+    display: none;
+  }
+
+  #nav-toggle:checked ~ .navbar {
+    max-height: 90px;
+  }
+
+  .space-nav{
+    height: 20px;
+  }
+  .nav-toggle-label{
+    width: 40px;
+    height: 31px;
+  }
+
+  .logo img{
+    height: 70px;
+  }
+
+  .red img{
+    height: 90px;
+  }
+}
+
+@media only screen and (min-width: 1200px){
+  #nav-toggle {
+    display: none;
+  }
+
+  .nav-toggle-label {
+    display: none;
+  }
+
+  .navbar {
+    max-height: 100px;
+    overflow: hidden;
+  }
+
+  .redes{
+    margin-left: 20px;
+  }
+
+  .red img{
+    height: 120px;
+  }
+
+  .red{
+    display: flex;
+    align-items: center;
+  }
+  .red p{
+    font-size: large;
+    padding-left: 15px;
+  }
+
+  .sign{
+    padding: 25px;
+    margin: 0px 40px;
+  }
 }

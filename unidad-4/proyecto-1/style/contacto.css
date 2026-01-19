@@ -1,0 +1,114 @@
+
+.form-container{
+    padding: 20px 10px;
+    background-color: var(--base-light);
+}
+
+.form-container h1{
+    padding: 20px;
+    color: white;
+}
+
+.huevo{
+    background-color: white;
+    border-radius: 90px;
+    padding: 60px 10px;
+}
+
+legend{
+    padding: 5px;
+}
+
+fieldset{
+    border-radius: 10px;
+    padding: 10px;
+}
+
+fieldset p{
+    display: flex;
+    flex-direction: column;
+}
+
+fieldset input, fieldset select, fieldset textarea{
+    padding: 10px;
+    margin: 10px 0px;
+    border: 1px solid var(--border-color);
+    background-color: var(--input-bg);
+    border-radius: 8px;
+    font-size: 1rem;
+    color: var(--text-color);
+    transition: all 0.3s ease;
+    outline: none; /* Quitamos el borde negro por defecto */
+}
+
+/* Estado Focus: Cuando se hace clic dentro */
+input:focus, select:focus, textarea:focus {
+    border-color: var(--primary-blue);
+    background-color: var(--white);
+}
+
+textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+input[type="checkbox"]{
+    accent-color: var(--primary-blue);
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+}
+
+
+#id-otro{
+    margin-top: 0;
+}
+
+#id-send{
+    display: flex;
+}
+
+#id-send input{
+    margin: 2px 0px 0px 15px;
+}
+
+.botonera{
+    text-align: center;
+}
+
+.botonera input{
+    margin: 5px 20px;
+    padding: 14px;
+    background-color: var(--base-light);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.botonera input:hover{
+    background-color: var(--primary-blue);
+}
+
+.botonera input:active{
+    transform: scale(0.98);
+}
+
+@media only screen and (min-width: 768px){
+    .huevo{
+        padding: 60px 30px;
+    }
+
+    .content-field{
+        padding: 0px 20px 0px 0px;
+    }
+}
+
+@media only screen and (min-width: 1200px){
+    
+    .form-container h1{
+        text-align: center;
+    }
+}

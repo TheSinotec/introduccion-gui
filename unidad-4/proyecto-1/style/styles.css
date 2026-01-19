@@ -1,8 +1,6 @@
 @import "colors.css";
-/*
-    color: var(--color-primary);
-*/
-
-/* TODOS LOS IMPORTS */
 @import "grid.css";
 @import "common.css";
+@import "perfil.css";
+@import "contacto.css";
+@import "portafolio.css"

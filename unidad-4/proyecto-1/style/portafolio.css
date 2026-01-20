@@ -7,6 +7,11 @@
     padding: 5px;
 }
 
+.end-card a{
+    text-decoration: none;
+    color: inherit;
+}
+
 .card {
     background-color: white;
     border: 1px solid var(--border-color);
@@ -17,6 +22,11 @@
     flex-direction: column;
     gap: 1rem;
     padding-bottom: 0;
+    transition: all 0.3s;
+}
+
+.card:hover{
+    transform: scale(1.03);
 }
 
 .detail-header {
@@ -41,10 +51,10 @@
 }
 
 .tech-diagram {
-    aspect-ratio: 1; /* Cuadrada */
-    background-color: #f1f5f9;
+    aspect-ratio: 1;
+    background-color: var(--input-bg);
     border-radius: 8px;
-    border: 1px dashed var(--border-color);
+    border: 1px solid var(--border-color);
     background-size: cover;
     transition: all 0.3s;
 }
@@ -58,11 +68,12 @@
 }
 
 #project-3{
+    margin-top: 0;
     background-image: url("../media/demo_3.webp");
 }
 
 .tech-diagram:hover{
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 
 
@@ -75,7 +86,7 @@
 .specs-list li {
     display: flex;
     padding: 4px 0;
-    border-bottom: 1px solid #f1f5f9;
+    border-bottom: 1px solid var(--input-bg);
 }
 
 .specs-list span { 
@@ -106,8 +117,6 @@
 }
 
 .detail-visual-container {
-    display: flex;
-    flex-direction: column;
     gap: 1rem;
 }
 
@@ -116,7 +125,7 @@
     background-color: var(--light-blue-bg);
     border-radius: 12px;
     border: 1px solid var(--border-color);
-    background-size: cover;
+    background-size:cover;
     background-position: center;
 }
 
@@ -132,6 +141,21 @@
     background-image: url('../media/shamir.png');
 }
 
+.caption {
+    margin-top: 5px;
+    font-size: 1.5rem;
+    text-align: center;
+    color: var(--primary-blue);
+}
+
+@media only screen and (min-width: 768px){
+    .secondary-image{
+        height: 350px;
+        width: 600px;
+        margin: auto;
+    }
+}
+
 @media only screen and (min-width: 992px){
     .tech-text {
         padding-left: 10px;
@@ -140,10 +164,10 @@
         padding-left: 10px;
     }
     .tech-diagram {
-        margin-top: 20px;
+        margin-top: 18px;
     }
     .secondary-image{
-        height: 400px;
+        height: 500px;
         width: 700px;
         margin: auto;
     }

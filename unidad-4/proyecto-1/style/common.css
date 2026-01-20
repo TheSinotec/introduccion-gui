@@ -17,7 +17,6 @@ html, body{
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
-/* --- LOGO --- */
 .logo img {
   height: 50px;
   display: block;
@@ -26,12 +25,10 @@ html, body{
   border-radius: 5px;
 }
 
-/* --- CHECKBOX HACK (La Magia) --- */
 #nav-toggle {
   display: none;
 }
 
-/* --- BOTÓN HAMBURGUESA --- */
 .nav-toggle-label {
   cursor: pointer;
   display: flex;
@@ -45,7 +42,6 @@ html, body{
   height: 15px;
 }
 
-/* Las 3 barritas del menú */
 .nav-toggle-label span {
   display: block;
   height: 3px;
@@ -55,7 +51,6 @@ html, body{
   transition: all 0.3s ease-in-out;
 }
 
-/* --- BARRA DE NAVEGACIÓN (MENÚ) --- */
 .navbar {
   max-height: 0;
   overflow: hidden;
@@ -84,7 +79,6 @@ html, body{
   background-color: #083562;
 }
 
-/* --- LÓGICA DE APERTURA (CSS PURE) --- */
 #nav-toggle:checked ~ .navbar {
   max-height: 300px;
 }

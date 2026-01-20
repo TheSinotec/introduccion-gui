@@ -27,7 +27,7 @@
 .list-text ul{
     padding: 9px;
     list-style: none;
-    background-color: #E9F1FA;
+    background-color: var(--light-blue-bg);
 }
 
 .list-text ul li{

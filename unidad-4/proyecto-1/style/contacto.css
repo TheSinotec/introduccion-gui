@@ -38,10 +38,10 @@ fieldset input, fieldset select, fieldset textarea{
     font-size: 1rem;
     color: var(--text-color);
     transition: all 0.3s ease;
-    outline: none; /* Quitamos el borde negro por defecto */
+    outline: none; 
 }
 
-/* Estado Focus: Cuando se hace clic dentro */
+
 input:focus, select:focus, textarea:focus {
     border-color: var(--primary-blue);
     background-color: var(--white);

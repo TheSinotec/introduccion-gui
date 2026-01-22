@@ -17,40 +17,40 @@
                 <div class="huevo">
                     <!--Formulario de datos-->
                     <form class="row">
-                        <div class="col-m-6 content-field col-l-6 col-xl-6">
+                        <div class="content-field col-l-6 col-xl-6 col-xs-12 col-s-12 col-m-12">
                              <!--Leyenda de seccion personal-->
                             <legend for="id-personal">Información personal:</legend>
                             <!--Campo de datos-->
-                            <fieldset id="id-personal" class="row">
-                                <p class="col-s-12 col-xs-12">
+                            <fieldset id="id-personal" class="">
+                                <p class="">
                                     <!--Entrada de nombre-->
                                     <label for="id-nombre"><b>Nombre completo:</b></label>
                                     <input id="id-nombre" name="nombre" type="text" placeholder="Ingresa tu nombre completo" required="">
                                 </p>
-                                <p class="col-s-12 col-xs-12">
+                                <p class="">
                                     <!--Entrada de correo-->
                                     <label for="id-email"><b>Correo elecrónico:</b></label>
                                     <input id="id-email" name="email" type="email" placeholder="Ingresa tu correo elecrónico" required="">
                                 </p>
-                                <p class="col-s-12 col-xs-12">
+                                <p class="">
                                     <!--Entrada de telefono-->
                                     <label for="id-telefono"><b>Número telefónico:</b></label>
                                     <input id="id-telefono" name="telefono" type="tel" minlength="8" pattern="[0-9]{10}" placeholder="Ingresa tu número de teléfono" required="">
                                 </p>
                             </fieldset>
                         </div>
-                        <div class="col-m-6 content-field col-l-6 col-xl-6">
+                        <div class="content-field">
                             <!--Leyenda de seccion de contenido-->
-                            <legend for="id-contenido">Contenido:</legend>
+                            <legend for="id-contenido col-xs-12 col-s-12 col-m-12">Contenido:</legend>
                             <!--Campo de datos-->
-                            <fieldset id="id-contenido" class="row">
-                                <p class="row col-s-12 col-xs-12">
+                            <fieldset id="id-contenido" class="">
+                                <p class="">
                                     <!--Entrada de seleccion de asunto-->
                                     <label for="id-asunto"><b>Asunto:</b></label>
                                     <!--Contenedor de selector-->
-                                    <div class="select-other">
+                                    <div class="select-other row">
                                         <!--Selector-->
-                                        <div class="col-s-12 col-xs-12">
+                                        <div class="col-xs-7 col-s-7 col-m-7">
                                             <select id="id-asunto" name="asunto" required="">
                                                 <option selected="" value="" disabled="">Selecciona un asunto</option>
                                                 <option value="Oferta laboral">Oferta laboral</option>
@@ -60,17 +60,17 @@
                                             </select>
                                         </div>
                                         <!--Campo -Otros--->
-                                        <input  class="col-s-12 col-xs-12" id="id-otro" name="otro" type="text" placeholder="Especificar otro">
+                                        <input  class="col-xs-12 col-s-12 col-m-12" id="id-otro" name="otro" type="text" placeholder="Especificar otro">
                                     </div>
                                 </p>
-                                <p class="col-s-12 col-xs-12">
+                                <p class=" col-xs-12 col-s-12 col-m-12 ">
                                     <!--Entrada de mensaje-->
                                     <label for="id-mensaje"><b>Mensaje:</b></label>
                                     <textarea id="id-mensaje" name="mensaje" placeholder="Describe tu mensaje en detalle..." required=""></textarea>
                                 </p>
                             </fieldset>
                         </div>
-                        <div class="col-m-12 col-l-12 col-xl-12">
+                        <div class="">
                             <!--Leyenda de seccion de terminos y condiciones-->
                             <legend for="id-send">Términos y condiciones:</legend>
                             <!--Campo de datos-->

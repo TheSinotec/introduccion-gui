@@ -96,19 +96,25 @@ input[type="checkbox"]{
     transform: scale(0.98);
 }
 
+
+.content-field{
+    padding-bottom: 20px;
+}
+
 @media only screen and (min-width: 768px){
     .huevo{
         padding: 60px 30px;
     }
 
-    .content-field{
-        padding: 0px 20px 0px 0px;
-    }
 }
 
-@media only screen and (min-width: 1200px){
+@media only screen and (min-width: 992px){
     
     .form-container h1{
         text-align: center;
+    }
+
+    .content-field{
+        padding: 0px 20px 0px 0px;
     }
 }

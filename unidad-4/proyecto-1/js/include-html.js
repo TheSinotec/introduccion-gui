@@ -28,7 +28,7 @@ const footerHTML = `<div class="col-xs-12 col-s-12 col-m-12 col-l-12 col-xl-12">
                                 <img src="media/phone.png" alt="WhatsApp">
                                 <p>WhatsApp</p>
                             </a>
-                            <a class="red col-xs-6 col-s-6 col-m-3 col-l-3 col-xl-3" href="www.linkedin.com/in/jonatán-salgado-razo-58731a317" target="_blank">
+                            <a class="red col-xs-6 col-s-6 col-m-3 col-l-3 col-xl-3" href="https://www.linkedin.com/in/jonatán-salgado-razo-58731a317" target="_blank">
                                 <img src="media/lin.png" alt="Linkedin">
                                 <p>Linkedin</p>
                             </a>
@@ -52,5 +52,6 @@ function loadHTML(){
         footerContainer.innerHTML = footerHTML;
     }
 }
+
 
 loadHTML();

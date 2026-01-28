@@ -17,7 +17,7 @@
             <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
-              <div class=" d-flex justify-content-md-center justify-content-sm-center">
+              <div class="d-flex justify-content-md-center justify-content-sm-center">
                 <ul class="navbar-nav">
                   <li class="nav-item">
                   <a class="nav-link active" aria-current="page" href="./index.html">Biografia</a>
@@ -33,7 +33,80 @@
             </div>
         </div>
     </nav>
-    <div></div>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-12 col-md-4 col-lg-5 bg-light">
+          <div class="row justify-content-center">
+              <div class="col-8 col-md-12 col-lg-8 px-5 py-4">
+                  <img src="media/photo.jpeg" class="img-fluid border border-3 border-info rounded" alt="Jonatán Salgado Razo">
+              </div>
+              <div class="col-11 col-md-12 p-3"> 
+                  <ul class="list-group list-group-flush text-center d-flex flex-row row">
+                      <!-- Cada elemento de lista va subrayado -->
+                      <li class="list-group-item list-group-item-info text-dark col-12 col-lg-6">
+                          Físico Computacional
+                      </li>
+                      <li class="list-group-item list-group-item-info text-dark col-12 col-lg-6">
+                          Matemático
+                      </li>
+                      <li class="list-group-item list-group-item-info text-dark col-12 col-lg-6">
+                          Diligente
+                      </li>
+                      <li class="list-group-item list-group-item-info text-dark col-12 col-lg-6">
+                          Filósofo amateur
+                      </li>
+                      <li class="list-group-item list-group-item-info text-dark col-12 col-lg-6">
+                          28 años
+                      </li>
+                      <li class="list-group-item list-group-item-info text-dark col-12 col-lg-6">
+                          <!-- Elemento tachado -->
+                          <s>Migajero</s>
+                      </li>
+                      <li class="list-group-item list-group-item-info text-dark col-12 col-lg-6">
+                          Entusiasta de las Tecnologías
+                      </li>
+                  </ul>
+              </div>
+          </div>
+        </div>
+        <article class="col-12 col-md-8 col-lg-7 bg-primary p-5 d-flex align-items-center">
+          <div class="card justify-content-center row">
+            <!-- Encabezado/titulo del articulo -->
+            <div class="card-header bg-info">
+                <!-- Titulo -->
+                <h1 class="text-white">Autobiografía</h1>
+            </div>
+            <!-- Parrafos de la biografia -->
+            <div class="card-body gy-0 px-5">
+                <p class="card-text">
+                    Nací el 3 de Julio de 1997 en Xochimilco, en el seno de la Ciudad de México (antes Distrito Federal, México), siendo hijo de un normalista y sociólogo, y una ama de casa. 
+                    Abandoné la escuela primaria en el tercer año y ejercí el comercio hasta los 12 años cuando completé mis estudios de primaria en el INEA e ingresé a la educación secundaria pública.
+                </p>
+                <p class="card-text">
+                    Estudié Informática en el CECyT #13, y a los 18 años entré a la universidad, pero cambié de carrera en varias ocasiones ejerciendo la docencia y trabajos informales entre medio.
+                    Entré a la UNAM en Psicología, donde me cambié a Diseño y Comunicación Visual, después ingresé a Metalurgia en el IPN y luego de nueva cuenta a la UNAM en Física, donde conluí formalmente 
+                    mis estudios como Físico Computacional.
+                </p>
+                <p class="card-text">
+                    En los ultimos años, he prestado mis servicios a la Dirección General de Cómputo y de Tecnologías de Información y Comunicación en una estancia de seis meses como desarrollador, y 
+                    actualmente me desempeño en diversas áreas para el Instituto de Formacion en Tecnologías (INFOTEC) como desarrollador y becario.
+                </p>
+            </div>
+            <!-- Pie del articulo -->
+            <div>
+              <br>
+                <p  class="blockquote-footer">
+                    <b>
+                        <!-- Simulacion de firma -->
+                        <i>Jonatán Salgado Razo.</i>
+                    </b>
+                </p>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+    <span class="p-5"></span>
     <footer class="d-flex flex-wrap justify-content-center justify-content-lg-between align-items-center py-3 my-4 border-top"> 
       <ul class="nav list-unstyled d-flex col-12 col-lg-6 justify-content-center justify-content-lg-start row gx-5 g-sm-0 px-lg-3 px-0"> 
         <li class="ms-3 col-lg-1 col-4 col-md-1 col-sm-1">
@@ -63,7 +136,11 @@
     </footer> 
     <style>
       .navbar-light .navbar-nav .nav-link:hover{
-          color: orange !important;
+        color: orange !important;
+      }
+
+      *{
+        transition: all 0.3s ease-in-out;
       }
     </style>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>

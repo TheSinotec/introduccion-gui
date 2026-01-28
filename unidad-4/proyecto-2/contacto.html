@@ -33,7 +33,97 @@
             </div>
         </div>
     </nav>
-    <div></div>
+    <div class="container-fluid">
+      <div class="row bg-info">
+          <div class="col-12 p-4">
+            <!--Titulo central del contenido-->
+            <h1>FORMULARIO</h1>
+            <div class="bg-light p-4 rounded">
+              <!--Formulario de datos-->
+              <form class="row">
+                  <div class="col-12 mb-3">
+                    <!--Leyenda de seccion personal-->
+                    <legend for="id-personal">Información personal:</legend>
+                    <!--Campo de datos-->
+                    <fieldset id="id-personal" class="card">
+                      <p class="">
+                        <!--Entrada de nombre-->
+                        <label for="id-nombre" class="form-label"><b>Nombre completo:</b></label>
+                        <input id="id-nombre" class="form-control" name="nombre" type="text" placeholder="Ingresa tu nombre completo" required="">
+                      </p>
+                      <p class="">
+                        <!--Entrada de correo-->
+                        <label for="id-email" class="form-label"><b>Correo elecrónico:</b></label>
+                        <input id="id-email" class="form-control" name="email" type="email" placeholder="Ingresa tu correo elecrónico" required="">
+                      </p>
+                      <p class="">
+                        <!--Entrada de telefono-->
+                        <label for="id-telefono" class="form-label"><b>Número telefónico:</b></label>
+                        <input id="id-telefono" class="form-control" name="telefono" type="tel" minlength="8" pattern="[0-9]{10}" placeholder="Ingresa tu número de teléfono" required="">
+                      </p>
+                    </fieldset>
+                  </div>
+                  <div class="col-12 mb-3">
+                    <!--Leyenda de seccion de contenido-->
+                    <legend for="id-contenido">Contenido:</legend>
+                    <!--Campo de datos-->
+                    <fieldset id="id-contenido" class="card">
+                      <p class="">
+                        <!--Entrada de seleccion de asunto-->
+                        <label for="id-asunto" class="form-label"><b>Asunto:</b></label>
+                        <!--Contenedor de selector-->
+                        <div class="">
+                          <!--Selector-->
+                          <div class="">
+                            <select id="id-asunto" class="form-select" name="asunto" required="">
+                              <option selected="" value="" disabled="">Selecciona un asunto</option>
+                              <option value="Oferta laboral">Oferta laboral</option>
+                              <option value="Colaboración">Colaboración</option>
+                              <option value="Consulta técnica">Consulta técnica</option>
+                              <option value="Otro">Otro (especificar)</option>
+                            </select>
+                          </div>
+                          <span class="p-5"></span>
+                          <!--Campo -Otros--->
+                          <input class="form-control" id="id-otro" name="otro" type="text" placeholder="Especificar otro">
+                        </div>
+                      </p>
+                      <p class="">
+                        <!--Entrada de mensaje-->
+                        <label for="id-mensaje" class="form-label"><b>Mensaje:</b></label>
+                        <textarea id="id-mensaje" class="form-control" name="mensaje" placeholder="Describe tu mensaje en detalle..." required=""></textarea>
+                      </p>
+                    </fieldset>
+                  </div>
+                  <div class="col-12 mb-3">
+                    <!--Leyenda de seccion de terminos y condiciones-->
+                    <legend for="id-send">Términos y condiciones:</legend>
+                    <div class="card">
+                      <!--Campo de datos-->
+                      <fieldset id="id-send">
+                        <!--Entrada de terminos y condiciones-->
+                        <label for="id-terminos" class="form-check-label"><b>Acepto la política de privacidad y términos de uso: </b></label>
+                        <input id="id-terminos" class="form-check-input" name="terminos" type="checkbox" required="">
+                      </fieldset>
+                      <span class="py-3"></span>
+                      <!--Leyenda de seccion de botones-->
+                      <legend for="id-botonera"></legend>
+                      <!--Campo de datos-->
+                      <fieldset id="id-botonera" class="d-flex justify-content-center">
+                        <!--Boton de envio-->
+                        <input type="submit" class="btn btn-primary btn-lg" value="Enviar Mensaje">
+                        <div class="px-2"></div>
+                        <!--Boton de reseteo-->
+                        <input type="reset" class="btn btn-warning btn-lg" value="Limpiar Formulario">
+                      </fieldset>
+                    </div>
+                  </div>
+              </form>
+            </div>
+          </div>
+      </div>
+    </div>
+    <span class="p-5"></span>
     <footer class="d-flex flex-wrap justify-content-center justify-content-lg-between align-items-center py-3 my-4 border-top"> 
       <ul class="nav list-unstyled d-flex col-12 col-lg-6 justify-content-center justify-content-lg-start row gx-5 g-sm-0 px-lg-3 px-0"> 
         <li class="ms-3 col-lg-1 col-4 col-md-1 col-sm-1">
@@ -63,9 +153,14 @@
     </footer> 
     <style>
       .navbar-light .navbar-nav .nav-link:hover{
-          color: orange !important;
+        color: orange !important;
+      }
+      
+      *{
+        transition: all 0.3s ease-in-out;
       }
     </style>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
   </body>
 </html>
+

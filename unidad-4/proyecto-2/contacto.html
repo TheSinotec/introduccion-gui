@@ -37,15 +37,15 @@
       <div class="row bg-info">
           <div class="col-12 p-4">
             <!--Titulo central del contenido-->
-            <h1>FORMULARIO</h1>
-            <div class="bg-light p-4 rounded">
+            <h1 class="py-3">FORMULARIO</h1>
+            <div class="bg-light p-4 rounded shadow">
               <!--Formulario de datos-->
               <form class="row">
                   <div class="col-12 mb-3">
                     <!--Leyenda de seccion personal-->
                     <legend for="id-personal">Información personal:</legend>
                     <!--Campo de datos-->
-                    <fieldset id="id-personal" class="card">
+                    <fieldset id="id-personal" class="card p-3 shadow">
                       <p class="">
                         <!--Entrada de nombre-->
                         <label for="id-nombre" class="form-label"><b>Nombre completo:</b></label>
@@ -67,7 +67,7 @@
                     <!--Leyenda de seccion de contenido-->
                     <legend for="id-contenido">Contenido:</legend>
                     <!--Campo de datos-->
-                    <fieldset id="id-contenido" class="card">
+                    <fieldset id="id-contenido" class="card p-3 shadow">
                       <p class="">
                         <!--Entrada de seleccion de asunto-->
                         <label for="id-asunto" class="form-label"><b>Asunto:</b></label>
@@ -98,23 +98,21 @@
                   <div class="col-12 mb-3">
                     <!--Leyenda de seccion de terminos y condiciones-->
                     <legend for="id-send">Términos y condiciones:</legend>
-                    <div class="card">
+                    <div class="card p-3 shadow">
                       <!--Campo de datos-->
-                      <fieldset id="id-send">
+                      <fieldset id="id-send" class="p-3 d-flex">
                         <!--Entrada de terminos y condiciones-->
                         <label for="id-terminos" class="form-check-label"><b>Acepto la política de privacidad y términos de uso: </b></label>
-                        <input id="id-terminos" class="form-check-input" name="terminos" type="checkbox" required="">
+                        <input id="id-terminos" class="form-check-input p-2 m-3" name="terminos" type="checkbox" required="">
                       </fieldset>
-                      <span class="py-3"></span>
                       <!--Leyenda de seccion de botones-->
                       <legend for="id-botonera"></legend>
                       <!--Campo de datos-->
-                      <fieldset id="id-botonera" class="d-flex justify-content-center">
+                      <fieldset id="id-botonera" class="d-flex row justify-content-center py-2 gy-2">
                         <!--Boton de envio-->
-                        <input type="submit" class="btn btn-primary btn-lg" value="Enviar Mensaje">
-                        <div class="px-2"></div>
+                        <input type="submit" class="btn btn-primary btn-lg col-10 shadow" value="Enviar Mensaje">
                         <!--Boton de reseteo-->
-                        <input type="reset" class="btn btn-warning btn-lg" value="Limpiar Formulario">
+                        <input type="reset" class="btn btn-warning btn-lg col-10 shadow" value="Limpiar Formulario">
                       </fieldset>
                     </div>
                   </div>

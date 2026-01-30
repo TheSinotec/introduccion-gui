@@ -1,26 +1,40 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+    <!--Cabecera principal-->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Nombre de la página, icono e inyeccion de estilo-->
     <title>Portafolio</title>
     <link rel="icon" type="image/jpg" href="media/icon.jpeg"/>
     <link rel="stylesheet" href="style/styles.css"/>
 </head>
 <body>
+    <!--Contenedor principal-->
     <div class="container">
+        <!--Contenedor de la Navbar-->
         <div id="navbar-container"></div>
+        <!--Contenedor del cuerpo de la pagina-->
         <div class="row">
+            <!--Contenedor de tarjetas-->
             <div class="card-container col-s-12 col-xs-12 col-m-12 col-l-12 col-xl-12 row">
+                <!--Contenedor de tarjeta-->
                 <div class="end-card col-m-6 col-l-4 col-xl-4">
+                    <!--Tarjeta vinculada a pagina de muestra-->
                     <a target="_blank" href="https://repositorioddtic.tic.unam.mx/Sistema-CV/" class="card row">
+                        <!--Titulo de la tarjeta-->
                         <div class="detail-header">Sistema de Trayectoria Académica</div>
+                        <!--Contenedor de imagen, descripción y tecnologías-->
                         <div class="tech-grid row">
+                            <!--Cntenedor de imagen-->
                             <div id="project-1" class="tech-diagram col-s-12 col-xs-12 col-m-12 col-l-6 col-xl-6"></div>
+                            <!--Contenedor de contenido de la tarjeta-->
                             <div class=" col-s-12 col-xs-12 col-m-12 col-l-6 col-xl-6">
+                                <!--Descripción-->
                                 <p class="tech-text">
                                     Plataforma de evaluación y gestión de la plantilla docente disponible, así como de la validación de nuevos prospectos para contrataciones de nuevo capital humano de la DGTIC.
                                 </p>
+                                <!--Lista de tecnologías-->
                                 <ul class="specs-list row">
                                     <li class=" col-s-3 col-xs-3 col-m-3 col-l-4 col-xl-4"><span>PHP</span></li>
                                     <li class=" col-s-3 col-xs-3 col-m-3 col-l-4 col-xl-4"><span>HTML</span></li>
@@ -69,18 +83,23 @@
                     </a>
                 </div>
             </div>
-            
+            <!--Contenedor de sección de detalles-->
             <div class="detail-container col-s-12 col-xs-12 col-m-12 col-l-12 col-xl-12">
+                <!--Contenedor de detalles de proyecto-->
                 <div class="detail-card ">
+                    <!--Titulo del proyecto-->
                     <header class="detail-header ">
                         <h3>Sistema de Trayectoria Académica</h3>
                     </header>
+                    <!--Subsección de detalles-->
                     <div class="detail-section">
+                        <!--Texto de descripción-->
                         <div class="detail-text">
                             <p>
                                 Este sistema busca mejorar el proceso de evaluación de la plantilla docente por parte de control escolar, constituyendo y facilitando un curriculum vitae, así como la automatización y gestión de datos (y disponibilidad de ellos) de los facilitadores de cursos en activo de la DGTIC. Es decir, se facilitará la evaluación, disponibilidad de horarios y cursos, así como del manejo del capital humano disponible (y sus datos) como instructor.
                             </p>
                         </div>
+                        <!--Contenedor de imagen de proyecto-->
                         <div class="detail-visual-container">
                             <div class="secondary-image" role="img" id="imagen-1"></div>
                         </div>
@@ -117,9 +136,11 @@
                     </div>
                 </div>
             </div>
+            <!--Contenedor del footer-->
             <div id="footer-container"></div>
         </div>
     </div>
+    <!--Script de inyección de Navbar y Footer-->
     <script src="js/include-html.js"></script>
 </body>
 </html>

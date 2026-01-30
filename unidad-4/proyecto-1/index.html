@@ -1,22 +1,32 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+    <!--Cabecera principal-->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Título de pagina, icono e invocación de estilo-->
     <title>Biografia</title>
     <link rel="icon" type="image/jpg" href="media/icon.jpeg"/>
     <link rel="stylesheet" href="style/styles.css"/>
 </head>
 <body>
+    <!--Contenedor principal-->
     <div class="container">
+        <!--Contenedor de Navbar-->
         <div id="navbar-container"></div>
+        <!--Contenedor del cuerpo de la pagina-->
         <div class="row">
+            <!--Contenedor de información de perfil-->
             <div class="perfil-data col-xs-12 col-s-12 col-m-12 col-l-5 col-xl-5">
+                <!--Subcontenedor-->
                 <div class="row">
+                    <!--Contenedor de foto con foto-->
                     <div class="photo col-xs-12 col-s-12 col-m-6 col-l-12 col-xl-12">
                         <img src="media/photo.jpeg" alt="Jonatán Salgado Razo">
                     </div>
+                    <!--Contenedor de lista de datos-->
                     <div class="list-text col-xs-12 col-s-12 col-m-6 col-l-12 col-xl-12"> 
+                        <!--Lista de datos-->
                         <ul>
                             <!-- Cada elemento de lista va subrayado -->
                             <li>
@@ -45,6 +55,7 @@
                     </div>
                 </div>
             </div>
+            <!--Contenedor de biografía de perfil-->
             <article class="bio-body col-xs-12 col-s-12 col-m-12 col-l-7 col-xl-7">
                 <!-- Encabezado/titulo del articulo -->
                 <div class="titulo-art">
@@ -77,9 +88,11 @@
                     </p>
                 </div>
             </article>
+            <!--Contenedor de Footer-->
             <div id="footer-container"></div>
         </div>
     </div>
+    <!--Script de inyección de Navbar y Footer-->
     <script src="js/include-html.js"></script>
 </body>
 </html>

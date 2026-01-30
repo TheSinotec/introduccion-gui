@@ -1,22 +1,29 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+    <!--Cabecera principal-->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Título de pagina, icono e invocación de estilo-->
     <title>Contactame</title>
     <link rel="icon" type="image/jpg" href="media/icon.jpeg"/>
     <link rel="stylesheet" href="style/styles.css"/>
 </head>
 <body>
+    <!--Contenedor principal-->
     <div class="container">
+        <!--Contenedor de Navbar-->
         <div id="navbar-container"></div>
+        <!--Contenedor del cuerpo de la pagina-->
         <div class="row">
+            <!--Contenedor del formulario-->
             <div class="form-container col-xs-12 col-s-12 col-m-12 col-l-12 col-xl-12">
                 <!--Titulo central del contenido-->
                 <h1>FORMULARIO</h1>
                 <div class="huevo">
                     <!--Formulario de datos-->
                     <form class="row">
+                        <!--Contenedor de infromación personal-->
                         <div class="content-field col-l-6 col-xl-6 col-xs-12 col-s-12 col-m-12">
                              <!--Leyenda de seccion personal-->
                             <legend for="id-personal">Información personal:</legend>
@@ -39,6 +46,7 @@
                                 </p>
                             </fieldset>
                         </div>
+                        <!--Contenedor de sección de conteido-->
                         <div class="content-field">
                             <!--Leyenda de seccion de contenido-->
                             <legend for="id-contenido col-xs-12 col-s-12 col-m-12">Contenido:</legend>
@@ -70,7 +78,8 @@
                                 </p>
                             </fieldset>
                         </div>
-                        <div class="">
+                        <!--Contenedor de botones y terminos y condiciones-->
+                        <div>
                             <!--Leyenda de seccion de terminos y condiciones-->
                             <legend for="id-send">Términos y condiciones:</legend>
                             <!--Campo de datos-->
@@ -92,9 +101,11 @@
                     </form>
                 </div>
             </div>
-            <p id="footer-container"></p>
+            <!--Contenedor del Footer-->
+            <div id="footer-container"></div>
         </div>
     </div>
+    <!--Script de inyección de Navbar y Footer-->
     <script src="js/include-html.js"></script>
 </body>
 </html>

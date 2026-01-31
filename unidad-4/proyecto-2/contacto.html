@@ -1,130 +1,146 @@
 <!doctype html>
 <html lang="es">
   <head>
+    <!--Cabecera principal-->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Nombre de la pagina, icono e inyección de Bootstrap 5-->
     <title>Contacto</title>
     <link rel="icon" type="image/jpg" href="media/icon.jpeg"/>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   </head>
   <body>
+    <!--Contenedor de barra de navegación-->
     <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #e3f2fd;">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="http://www.infotec.mx">
-                <img src="./media/logo.png" alt="" height="31" class="d-inline-block align-text-top">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavDropdown">
-              <div class=" d-flex justify-content-md-center justify-content-sm-center">
-                <ul class="navbar-nav">
-                  <li class="nav-item">
-                  <a class="nav-link" aria-current="page" href="./index.html">Biografia</a>
-                  </li>
-                  <li class="nav-item">
-                  <a class="nav-link" href="./portafolio.html">Portafolio</a>
-                  </li>
-                  <li class="nav-item">
-                  <a class="nav-link active" href="./contacto.html">Contacto</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-        </div>
-    </nav>
-    <div class="container-fluid">
-      <div class="row bg-info">
-          <div class="col-12 p-4">
-            <!--Titulo central del contenido-->
-            <h1 class="py-3">FORMULARIO</h1>
-            <div class="bg-light p-4 rounded shadow">
-              <!--Formulario de datos-->
-              <form class="row">
-                  <div class="col-12 col-md-6 mb-3">
-                    <!--Leyenda de seccion personal-->
-                    <legend for="id-personal">Información personal:</legend>
-                    <!--Campo de datos-->
-                    <fieldset id="id-personal" class="card p-3 shadow">
-                      <p class="">
-                        <!--Entrada de nombre-->
-                        <label for="id-nombre" class="form-label"><b>Nombre completo:</b></label>
-                        <input id="id-nombre" class="form-control" name="nombre" type="text" placeholder="Ingresa tu nombre completo" required="">
-                      </p>
-                      <p class="">
-                        <!--Entrada de correo-->
-                        <label for="id-email" class="form-label"><b>Correo elecrónico:</b></label>
-                        <input id="id-email" class="form-control" name="email" type="email" placeholder="Ingresa tu correo elecrónico" required="">
-                      </p>
-                      <p class="">
-                        <!--Entrada de telefono-->
-                        <label for="id-telefono" class="form-label"><b>Número telefónico:</b></label>
-                        <input id="id-telefono" class="form-control" name="telefono" type="tel" minlength="8" pattern="[0-9]{10}" placeholder="Ingresa tu número de teléfono" required="">
-                      </p>
-                    </fieldset>
-                  </div>
-                  <div class="col-12 col-md-6 mb-3">
-                    <!--Leyenda de seccion de contenido-->
-                    <legend for="id-contenido">Contenido:</legend>
-                    <!--Campo de datos-->
-                    <fieldset id="id-contenido" class="card p-3 shadow">
-                      <p class="">
-                        <!--Entrada de seleccion de asunto-->
-                        <label for="id-asunto" class="form-label"><b>Asunto:</b></label>
-                        <!--Contenedor de selector-->
-                        <div class="">
-                          <!--Selector-->
-                          <div class="">
-                            <select id="id-asunto" class="form-select" name="asunto" required="">
-                              <option selected="" value="" disabled="">Selecciona un asunto</option>
-                              <option value="Oferta laboral">Oferta laboral</option>
-                              <option value="Colaboración">Colaboración</option>
-                              <option value="Consulta técnica">Consulta técnica</option>
-                              <option value="Otro">Otro (especificar)</option>
-                            </select>
-                          </div>
-                          <span class="p-5"></span>
-                          <!--Campo -Otros--->
-                          <input class="form-control" id="id-otro" name="otro" type="text" placeholder="Especificar otro">
-                        </div>
-                      </p>
-                      <p class="">
-                        <!--Entrada de mensaje-->
-                        <label for="id-mensaje" class="form-label"><b>Mensaje:</b></label>
-                        <textarea id="id-mensaje" class="form-control" name="mensaje" placeholder="Describe tu mensaje en detalle..." required=""></textarea>
-                      </p>
-                    </fieldset>
-                  </div>
-                  <div class="col-12 mb-3">
-                    <!--Leyenda de seccion de terminos y condiciones-->
-                    <legend for="id-send">Términos y condiciones:</legend>
-                    <div class="card p-3 shadow">
-                      <!--Campo de datos-->
-                      <fieldset id="id-send" class="p-3 d-flex justify-content-sm-center">
-                        <!--Entrada de terminos y condiciones-->
-                        <label for="id-terminos" class="form-check-label"><b>Acepto la política de privacidad y términos de uso: </b></label>
-                        <input id="id-terminos" class="form-check-input p-2 m-3 my-sm-1" name="terminos" type="checkbox" required="">
-                      </fieldset>
-                      <!--Leyenda de seccion de botones-->
-                      <legend for="id-botonera"></legend>
-                      <!--Campo de datos-->
-                      <fieldset id="id-botonera" class="d-flex row justify-content-center py-2 gy-2">
-                        <!--Boton de envio-->
-                        <input type="submit" class="btn btn-primary btn-lg col-10 col-sm-7 col-md-4 col-lg-3 mx-md-3 shadow" value="Enviar Mensaje">
-                        <!--Boton de reseteo-->
-                        <input type="reset" class="btn btn-warning btn-lg col-10 col-sm-7 col-md-4 col-lg-3 shadow" value="Limpiar Formulario">
-                      </fieldset>
-                    </div>
-                  </div>
-              </form>
-            </div>
+      <!--Contenedor principal de la Navbar-->
+      <div class="container-fluid">
+        <!--Logo clickable-->
+        <a class="navbar-brand" href="http://www.infotec.mx">
+            <img src="./media/logo.png" alt="" height="31" class="d-inline-block align-text-top">
+        </a>
+        <!--Boton de menú hamburguesa-->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!--Contenido de la barra-->
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <!--Subcontenedor con el listado de enlaces-->
+          <div class="d-flex justify-content-md-center justify-content-sm-center">
+            <!--Lista de enlaces-->
+            <ul class="navbar-nav">
+              <li class="nav-item">
+              <a class="nav-link " aria-current="page" href="./index.html">Biografia</a>
+              </li>
+              <li class="nav-item">
+              <a class="nav-link" href="./portafolio.html">Portafolio</a>
+              </li>
+              <li class="nav-item">
+              <a class="nav-link active" href="./contacto.html">Contacto</a>
+              </li>
+            </ul>
           </div>
+        </div>
+      </div>
+    </nav>
+    <!--Contenedor del cuerpo de pagina-->
+    <div class="container-fluid">
+      <!--Subcontenedor de fila-->
+      <div class="row bg-info">
+        <!--Subcontenedor con color-->
+        <div class="col-12 p-4">
+          <!--Titulo central del contenido-->
+          <h1 class="py-3">FORMULARIO</h1>
+          <div class="bg-light p-4 rounded shadow">
+            <!--Formulario de datos-->
+            <form class="row">
+                <div class="col-12 col-md-6 mb-3">
+                  <!--Leyenda de seccion personal-->
+                  <legend for="id-personal">Información personal:</legend>
+                  <!--Campo de datos-->
+                  <fieldset id="id-personal" class="card p-3 shadow">
+                    <p class="">
+                      <!--Entrada de nombre-->
+                      <label for="id-nombre" class="form-label"><b>Nombre completo:</b></label>
+                      <input id="id-nombre" class="form-control" name="nombre" type="text" placeholder="Ingresa tu nombre completo" required="">
+                    </p>
+                    <p class="">
+                      <!--Entrada de correo-->
+                      <label for="id-email" class="form-label"><b>Correo elecrónico:</b></label>
+                      <input id="id-email" class="form-control" name="email" type="email" placeholder="Ingresa tu correo elecrónico" required="">
+                    </p>
+                    <p class="">
+                      <!--Entrada de telefono-->
+                      <label for="id-telefono" class="form-label"><b>Número telefónico:</b></label>
+                      <input id="id-telefono" class="form-control" name="telefono" type="tel" minlength="8" pattern="[0-9]{10}" placeholder="Ingresa tu número de teléfono" required="">
+                    </p>
+                  </fieldset>
+                </div>
+                <div class="col-12 col-md-6 mb-3">
+                  <!--Leyenda de seccion de contenido-->
+                  <legend for="id-contenido">Contenido:</legend>
+                  <!--Campo de datos-->
+                  <fieldset id="id-contenido" class="card p-3 shadow">
+                    <p class="">
+                      <!--Entrada de seleccion de asunto-->
+                      <label for="id-asunto" class="form-label"><b>Asunto:</b></label>
+                      <!--Contenedor de selector-->
+                      <div class="">
+                        <!--Selector-->
+                        <div class="">
+                          <select id="id-asunto" class="form-select" name="asunto" required="">
+                            <option selected="" value="" disabled="">Selecciona un asunto</option>
+                            <option value="Oferta laboral">Oferta laboral</option>
+                            <option value="Colaboración">Colaboración</option>
+                            <option value="Consulta técnica">Consulta técnica</option>
+                            <option value="Otro">Otro (especificar)</option>
+                          </select>
+                        </div>
+                        <span class="p-5"></span>
+                        <!--Campo -Otros--->
+                        <input class="form-control" id="id-otro" name="otro" type="text" placeholder="Especificar otro">
+                      </div>
+                    </p>
+                    <p class="">
+                      <!--Entrada de mensaje-->
+                      <label for="id-mensaje" class="form-label"><b>Mensaje:</b></label>
+                      <textarea id="id-mensaje" class="form-control" name="mensaje" placeholder="Describe tu mensaje en detalle..." required=""></textarea>
+                    </p>
+                  </fieldset>
+                </div>
+                <div class="col-12 mb-3">
+                  <!--Leyenda de seccion de terminos y condiciones-->
+                  <legend for="id-send">Términos y condiciones:</legend>
+                  <div class="card p-3 shadow">
+                    <!--Campo de datos-->
+                    <fieldset id="id-send" class="p-3 d-flex justify-content-sm-center">
+                      <!--Entrada de terminos y condiciones-->
+                      <label for="id-terminos" class="form-check-label"><b>Acepto la política de privacidad y términos de uso: </b></label>
+                      <input id="id-terminos" class="form-check-input p-2 m-3 my-sm-1" name="terminos" type="checkbox" required="">
+                    </fieldset>
+                    <!--Leyenda de seccion de botones-->
+                    <legend for="id-botonera"></legend>
+                    <!--Campo de datos-->
+                    <fieldset id="id-botonera" class="d-flex row justify-content-center py-2 gy-2">
+                      <!--Boton de envio-->
+                      <input type="submit" class="btn btn-primary btn-lg col-10 col-sm-7 col-md-4 col-lg-3 mx-md-3 shadow" value="Enviar Mensaje">
+                      <!--Boton de reseteo-->
+                      <input type="reset" class="btn btn-warning btn-lg col-10 col-sm-7 col-md-4 col-lg-3 shadow" value="Limpiar Formulario">
+                    </fieldset>
+                  </div>
+                </div>
+            </form>
+          </div>
+        </div>
       </div>
     </div>
+    <!--Separador forzado-->
     <span class="p-5"></span>
+    <!--Contenedor de pie de pagina-->
     <footer class="d-flex flex-wrap justify-content-center justify-content-lg-between align-items-center py-3 my-4 border-top"> 
+      <!--Lista de redes sociales-->
       <ul class="nav list-unstyled d-flex col-12 col-lg-6 justify-content-center justify-content-lg-start row gx-5 g-sm-0 px-lg-3 px-0"> 
         <li class="ms-3 col-lg-1 col-4 col-md-1 col-sm-1">
+          <!--Logo de la red encapsulada por enlace clickable-->
           <a class="text-body-secondary" href="https://github.com/TheSinotec" target="_blank" aria-label="github">
             <img class="img-fluid" src="./media/git.png">
           </a>
@@ -145,10 +161,12 @@
           </a>
         </li> 
       </ul> 
+      <!--Segmento de firma del autor-->
       <div class="d-flex align-items-center col-12 col-lg-3 justify-content-center justify-content-lg-end p-4 p-lg-3"> 
         <span class="mb-3 text-body-secondary">© 2025 Jonatán Salgado Razo</span> 
       </div> 
     </footer> 
+    <!--Hover y suavizado de transiciones-->
     <style>
       .navbar-light .navbar-nav .nav-link:hover{
         color: orange !important;
@@ -158,6 +176,7 @@
         transition: all 0.3s ease-in-out;
       }
     </style>
+    <!--Inyección de JS propio de Boostrap-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
   </body>
 </html>

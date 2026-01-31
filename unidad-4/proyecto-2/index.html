@@ -1,75 +1,93 @@
 <!doctype html>
 <html lang="es">
   <head>
+    <!--Cabecera principal-->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Nombre de la pagina, icono e inyección de Bootstrap 5-->
     <title>Biografia</title>
     <link rel="icon" type="image/jpg" href="media/icon.jpeg"/>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   </head>
   <body>
+    <!--Contenedor de barra de navegación-->
     <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #e3f2fd;">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="http://www.infotec.mx">
-                <img src="./media/logo.png" alt="" height="31" class="d-inline-block align-text-top">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavDropdown">
-              <div class="d-flex justify-content-md-center justify-content-sm-center">
-                <ul class="navbar-nav">
-                  <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="./index.html">Biografia</a>
-                  </li>
-                  <li class="nav-item">
-                  <a class="nav-link" href="./portafolio.html">Portafolio</a>
-                  </li>
-                  <li class="nav-item">
-                  <a class="nav-link" href="./contacto.html">Contacto</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-        </div>
-    </nav>
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-12 col-md-4 col-lg-5 bg-light">
-          <div class="row justify-content-center">
-              <div class="col-8 col-md-12 col-lg-8 px-5 py-4">
-                  <img src="media/photo.jpeg" class="img-fluid border border-3 border-info rounded" alt="Jonatán Salgado Razo">
-              </div>
-              <div class="col-11 col-md-12 p-3"> 
-                  <ul class="list-group list-group-flush text-center d-flex flex-row row">
-                      <!-- Cada elemento de lista va subrayado -->
-                      <li class="list-group-item list-group-item-info text-dark col-12 col-lg-6">
-                          Físico Computacional
-                      </li>
-                      <li class="list-group-item list-group-item-info text-dark col-12 col-lg-6">
-                          Matemático
-                      </li>
-                      <li class="list-group-item list-group-item-info text-dark col-12 col-lg-6">
-                          Diligente
-                      </li>
-                      <li class="list-group-item list-group-item-info text-dark col-12 col-lg-6">
-                          Filósofo amateur
-                      </li>
-                      <li class="list-group-item list-group-item-info text-dark col-12 col-lg-6">
-                          28 años
-                      </li>
-                      <li class="list-group-item list-group-item-info text-dark col-12 col-lg-6">
-                          <!-- Elemento tachado -->
-                          <s>Migajero</s>
-                      </li>
-                      <li class="list-group-item list-group-item-info text-dark col-12 col-lg-6">
-                          Entusiasta de las Tecnologías
-                      </li>
-                  </ul>
-              </div>
+      <!--Contenedor principal de la Navbar-->
+      <div class="container-fluid">
+        <!--Logo clickable-->
+        <a class="navbar-brand" href="http://www.infotec.mx">
+            <img src="./media/logo.png" alt="" height="31" class="d-inline-block align-text-top">
+        </a>
+        <!--Boton de menú hamburguesa-->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!--Contenido de la barra-->
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <!--Subcontenedor con el listado de enlaces-->
+          <div class="d-flex justify-content-md-center justify-content-sm-center">
+            <!--Lista de enlaces-->
+            <ul class="navbar-nav">
+              <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="./index.html">Biografia</a>
+              </li>
+              <li class="nav-item">
+              <a class="nav-link" href="./portafolio.html">Portafolio</a>
+              </li>
+              <li class="nav-item">
+              <a class="nav-link" href="./contacto.html">Contacto</a>
+              </li>
+            </ul>
           </div>
         </div>
+      </div>
+    </nav>
+    <!--Contenedor de cuerpo principal-->
+    <div class="container-fluid">
+      <!--Contenedor de fila-->
+      <div class="row">
+        <!--Contenedor de imagen y datos-->
+        <div class="col-12 col-md-4 col-lg-5 bg-light">
+          <!--Subcontenedor forzado como fila-->
+          <div class="row justify-content-center">
+            <!--Contenedor con foto de perfil-->
+            <div class="col-8 col-md-12 col-lg-8 px-5 py-4">
+                <img src="media/photo.jpeg" class="img-fluid border border-3 border-info rounded" alt="Jonatán Salgado Razo">
+            </div>
+            <!--Contenedor de datos del perfil-->
+            <div class="col-11 col-md-12 p-3"> 
+              <!--Lista de datos-->
+                <ul class="list-group list-group-flush text-center d-flex flex-row row">
+                    <!-- Cada elemento de lista va subrayado -->
+                    <li class="list-group-item list-group-item-info text-dark col-12 col-lg-6">
+                        Físico Computacional
+                    </li>
+                    <li class="list-group-item list-group-item-info text-dark col-12 col-lg-6">
+                        Matemático
+                    </li>
+                    <li class="list-group-item list-group-item-info text-dark col-12 col-lg-6">
+                        Diligente
+                    </li>
+                    <li class="list-group-item list-group-item-info text-dark col-12 col-lg-6">
+                        Filósofo amateur
+                    </li>
+                    <li class="list-group-item list-group-item-info text-dark col-12 col-lg-6">
+                        28 años
+                    </li>
+                    <li class="list-group-item list-group-item-info text-dark col-12 col-lg-6">
+                        <!-- Elemento tachado -->
+                        <s>Migajero</s>
+                    </li>
+                    <li class="list-group-item list-group-item-info text-dark col-12 col-lg-6">
+                        Entusiasta de las Tecnologías
+                    </li>
+                </ul>
+            </div>
+          </div>
+        </div>
+        <!--Contenedor de autobiografía-->
         <article class="col-12 col-md-8 col-lg-7 bg-primary p-5 d-flex align-items-center">
+          <!--Subcontenedor tipo card-->
           <div class="card justify-content-center row">
             <!-- Encabezado/titulo del articulo -->
             <div class="card-header bg-info">
@@ -106,10 +124,14 @@
         </article>
       </div>
     </div>
+    <!--Separador forzado-->
     <span class="p-5"></span>
+    <!--Contenedor de pie de pagina-->
     <footer class="d-flex flex-wrap justify-content-center justify-content-lg-between align-items-center py-3 my-4 border-top"> 
+      <!--Lista de redes sociales-->
       <ul class="nav list-unstyled d-flex col-12 col-lg-6 justify-content-center justify-content-lg-start row gx-5 g-sm-0 px-lg-3 px-0"> 
         <li class="ms-3 col-lg-1 col-4 col-md-1 col-sm-1">
+          <!--Logo de la red encapsulada por enlace clickable-->
           <a class="text-body-secondary" href="https://github.com/TheSinotec" target="_blank" aria-label="github">
             <img class="img-fluid" src="./media/git.png">
           </a>
@@ -130,10 +152,12 @@
           </a>
         </li> 
       </ul> 
+      <!--Segmento de firma del autor-->
       <div class="d-flex align-items-center col-12 col-lg-3 justify-content-center justify-content-lg-end p-4 p-lg-3"> 
         <span class="mb-3 text-body-secondary">© 2025 Jonatán Salgado Razo</span> 
       </div> 
     </footer> 
+    <!--Hover y suavizado de transiciones-->
     <style>
       .navbar-light .navbar-nav .nav-link:hover{
         color: orange !important;
@@ -143,6 +167,7 @@
         transition: all 0.3s ease-in-out;
       }
     </style>
+    <!--Inyección de JS propio de Boostrap-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
   </body>
 </html>
